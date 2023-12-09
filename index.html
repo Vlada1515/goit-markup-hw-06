@@ -3,55 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    
+
     <title>WebStudio</title>
   </head>
 
-  
-    <!--HEADER-->
-    <header class="top-header">
-      <div class="container header-container">
+  <!--HEADER-->
+  <header class="top-header">
+    <div class="container header-container">
       <nav class="top-nav">
-        <a href=" ./index.html" class="logo"
-        >Web<span class="text-logo">Studio</span></a>
+        <a href=" ./index.html" class="logo">Web<span class="text-logo">Studio</span></a>
 
         <ul class="menu">
           <li><a class="menu-link current" href="./index.html">Studio</a></li>
           <li><a class="menu-link" href="">Portfolio</a></li>
           <li><a class="menu-link" href="">Contacts</a></li>
-        
         </ul>
       </nav>
       <address class="contacts">
         <ul class="address-menu">
-          <li><a class="address-link" href="mailto:info@devstudio.com" >info@devstudio.com</a>
-          </li>
-          <li><a class="address-link" href="tel:+110001111111" >+11 (000) 111-11-11</a>
-          </li>
+          <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button class="mobile-menu-open-btn" type="button">
+        <svg class="mobile-menu-open-bth-icon" width="24" height="24" aria-label="mobile menu open icon">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
-    </header>
+  </header>
 
-    <!--MAIN-->
+  <!--MAIN-->
 
-    <!-- SECTION 1 -->
-    <main>
+  <!-- SECTION 1 -->
+  <!-- <main>
       <section class="first-section">
         <div class="container">
         <h1 class="main-title"> Effective Solutions for Your Business</h1>
         <button type="button" class="button-text">Order Service</button>
       </div>
-      </section>
+      </section> -->
 
-      <!-- SECTION 2 -->
-      <section class="second-section">
+  <!-- SECTION 2 -->
+  <!-- <section class="second-section">
         <div class="container">
         <h2 class="visually-hidden">Our benefits</h2>
         <ul class="second-section-list">
@@ -115,11 +124,11 @@
           </li>
         </ul>
         </div>
-      </section>
+      </section> -->
 
-    <!-- SECTION 3 -->
+  <!-- SECTION 3 -->
 
-    <section class="third-section">
+  <!-- <section class="third-section">
       <div class="container">
       <h2 class="third-section-title">Our Team</h2>
       <ul class="third-section-list">
@@ -342,11 +351,10 @@
       </li>
       </ul>
     </div>
-    </section>
-
+    </section> -->
 
   <!-- SECTION 4  -->
-<section class="fourth-section">
+  <!-- <section class="fourth-section">
   <div class="container">
 <h2 class="fourth-section-title">Our Portfolio</h2>
 
@@ -419,10 +427,10 @@
 </ul>
 </div>
 </section>
-</main>
+</main> -->
 
-    <!--FOOTER-->
-    <footer class="section-footer">
+  <!--FOOTER-->
+  <!-- <footer class="section-footer">
       <div class="container footer-container">
 
         <div class="footer-container-logo-text">
@@ -487,12 +495,11 @@
       </div>
 
       </div>
-    </footer>
+    </footer> -->
 
+  <!-- BACKDROP WITH MODAL WINDOW -->
 
-<!-- BACKDROP WITH MODAL-WINDOW -->
-
- <div class="backdrop is-open">
+  <!-- <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
@@ -570,6 +577,92 @@
 
 </form>
 </div>
- </div>
+ </div> -->
+
+
+ <!--  MOBILE MENU -->
+<div class="mobile-menu-wrapper">
+  <div class="container mobile-menu-container">
+  <button class="mobile-menu-close-btn" type="button">
+    <svg class="mobile-menu-close-btn-icon" width="8" height="8" aria-label="mobile menu close icon">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+<nav class="mobile-menu-navigation">
+  <ul class="mobile-menu">
+    <li class="mobile-item">
+      <a class="mobile-menu-link" href="">Studio</a>
+    </li>
+    <li class="mobile-item">
+      <a class="mobile-menu-link" href="">Portfolio</a>
+    </li>
+    <li class="mobile-item">
+      <a class="mobile-menu-link" href="">Contacts</a>
+    </li>
+  </ul>
+</nav>
+
+      <address class="mobile-menu-contacts">
+        <ul class="mobile-menu-contacts-list">
+          <li class="mobile-menu-contacts-item">
+            <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com
+          </a>
+          </li>
+          <li class="mobile-menu-contacts-item">
+            <a class="mobile-menu-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11
+          </a>
+          </li>
+        </ul>
+      </address>
+
+<ul class="mobile-menu-social-list">
+  <li class="mobile-menu-social-item">
+    
+    <a href="" class="mobile-menu-social-link">
+                  <svg class="mobile-menu-icon" 
+            width="16" 
+            height="16"
+            aria-label="instagram-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+    </a>
+  </li>
+
+  <li class="mobile-menu-social-item">
+    <a href="" class="mobile-menu-social-link">
+            <svg class="mobile-menu-icon" 
+            width="16" 
+            height="16"
+            aria-label="twitter-icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+                 </svg>
+</a>
+  </li>
+
+  <li class="mobile-menu-social-item">
+    <a href="" class="mobile-menu-social-link">
+            <svg class="mobile-menu-icon" 
+            width="16" 
+            height="16"
+            aria-label="facebook-icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+               </svg>
+    </a>
+  </li>
+
+  <li class="mobile-menu-social-item">
+    <a href="" class="mobile-menu-social-link">
+            <svg class="mobile-menu-icon" 
+            width="16" 
+            height="16"
+            aria-label="linkedin-icon">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+    </a>
+  </li>
+
+</ul>
+</div>
+  </div>
   </body>
 </html>
