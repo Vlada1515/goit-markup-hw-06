@@ -304,7 +304,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 288px;
-    min-height: 632px;
+    min-height: 623px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -563,8 +563,15 @@ body {
         letter-spacing: 0.04em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* -------------- TABLET MODAL WINDOW -------------- */
+.modal {
+width: 408px;
+min-height: 584px;
+}
+
 
 }
+
 
 /*  ================== DESKTOP ================== */
 /* -------------- HEADER -------------- */
@@ -601,5 +608,37 @@ padding: 24px 0;
     color: #404BBF
 }
 
+/* -------------- DESKTOP MODAL WINDOW -------------- */
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404bbf;
+    fill: #ffffff;
+    border: none;
 }
 
+.modal-close-btn-icon:hover,
+.modal-close-btn-icon:focus {
+    fill: #ffffff;
+}
+
+.order-service-input:focus {
+    border-color: #4D5AE5;
+}
+
+.order-service-input:focus+.order-service-input-icon {
+    fill: #4D5AE5;
+}
+
+.order-service-input-icon:focus {
+    fill: #4D5AE5;
+}
+
+.order-service-textarea-comment:focus {
+    border-color: #4D5AE5;
+}
+
+.order-service-submit-btn:hover {
+    background: var(--OCEAN, #404BBF);
+}
+
+}
