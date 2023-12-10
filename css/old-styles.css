@@ -281,9 +281,6 @@ background: var(--OCEAN, #404BBF);
     padding: 120px 0;
 }
 
-
-
-
 .second-section-list {
     display: flex;
     gap: 24px;

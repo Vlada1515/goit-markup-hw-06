@@ -81,6 +81,19 @@ body {
     padding: 0;
 }
 
+
+.section {
+    padding: 120px 0;
+}
+
+@media screen and (max-width: 1157px) {
+.section {
+    padding: 96px 0;
+}
+}
+    
+
+
 /* ================== CONTAINER (MOBILE) ==================*/
 .container {
     max-width: 318px;
@@ -143,6 +156,48 @@ body {
     padding-top: 16px;
     padding-bottom: 18px;
 }
+
+/* -------------- MOBILE SECTION 1 -------------- */
+/* -------------- MOBILE SECTION 2 -------------- */
+@media screen and (max-width: 1157px) {
+.container-icon {
+    display: none;
+}
+}
+
+.second-section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.section-text {
+        color: var(--NAVY-BLUE, #2E2F42);
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            margin: 0;
+            margin-bottom: 8px;
+            text-align: center;
+            gap: 8px;
+}
+
+.text {
+    font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin: 0;
+}
+
+/* -------------- MOBILE SECTION 3 -------------- */
+/* -------------- MOBILE SECTION 4 -------------- */
+/* -------------- MOBILE FOOTER -------------- */
+
 
 /*  MOBILE-MENU STYLES */
 
@@ -478,6 +533,7 @@ body {
 
 
 /*  ================== TABLET ================== */
+
 /* -------------- HEADER -------------- */
 
 @media screen and (min-width: 768px) {
@@ -563,12 +619,39 @@ body {
         letter-spacing: 0.04em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* -------------- TABLET SECTION 1 -------------- */
+/* -------------- TABLET SECTION 2 -------------- */
+
+.second-section {
+    line-height: 1.2;
+}
+
+.second-section-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+
+.second-section-item {
+    width: calc((100% - 72px) / 2);
+}
+
+.section-text {
+    text-align: start;
+}
+
+/* -------------- TABLET SECTION 3 -------------- */
+/* -------------- TABLET SECTION 4 -------------- */
+/* -------------- TABLET FOOTER -------------- */
+
+
 /* -------------- TABLET MODAL WINDOW -------------- */
 .modal {
 width: 408px;
 min-height: 584px;
 }
-
 
 }
 
@@ -592,6 +675,7 @@ min-height: 584px;
 }
 
 .address-menu {
+    display: flex;
    flex-direction: row;
    gap: 40px;
 }
@@ -607,6 +691,48 @@ padding: 24px 0;
 .address-link:focus {
     color: #404BBF
 }
+
+/* -------------- DESKTOP SECTION 1 -------------- */
+/* -------------- DESKTOP SECTION 2 -------------- */
+.second-section {
+    line-height: 1.2;
+}
+
+.second-section-item {
+    width: calc((100% - 72px) / 4);
+}
+
+
+.section-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
+}
+
+.text {
+    font-weight: 400;
+}
+
+
+.container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+}
+
+/* -------------- DESKTOP SECTION 3 -------------- */
+/* -------------- DESKTOP SECTION 4 -------------- */
+/* -------------- DESKTOP FOOTER -------------- */
+
+
+
 
 /* -------------- DESKTOP MODAL WINDOW -------------- */
 .modal-close-btn:hover,
