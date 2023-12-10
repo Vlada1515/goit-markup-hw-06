@@ -674,7 +674,7 @@ min-height: 584px;
     color: #404BBF;
 }
 
-.address-menu {
+.contacts {
     display: flex;
    flex-direction: row;
    gap: 40px;
