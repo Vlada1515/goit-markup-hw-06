@@ -195,7 +195,157 @@ body {
 }
 
 /* -------------- MOBILE SECTION 3 -------------- */
+
+
+.third-section {
+    background: var(--CLOUD, #F4F4FD);
+    line-height: 1.11;
+}
+
+.third-section-title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    /* 111.111% */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.third-section-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.third-section-item {
+    display: block;
+    background: var(--WHITE, #FFF);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: 264px;
+}
+
+.third-section-item-text {
+    padding: 32px 0;
+}
+
+.third-section-text {
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.third-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 0;
+}
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.social-link-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-section:hover,
+.social-link-section:focus {
+    background-color: #404bbf;
+}
+
+.icon-section-three {
+    fill: #f4f4fd;
+}
+
+
 /* -------------- MOBILE SECTION 4 -------------- */
+
+
+.fourth-section-title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    /* 111.111% */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.fourth-section-item {
+    width: 288px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fourth-section-item-text {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.our-portfolio-top {
+display: none;
+}
+
+.fourth-section-text {
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
+    letter-spacing: 0.02em;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+
+.fourth-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
 /* -------------- MOBILE FOOTER -------------- */
 
 
@@ -643,7 +793,25 @@ body {
 }
 
 /* -------------- TABLET SECTION 3 -------------- */
+
+.third-section-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+}
+
+
 /* -------------- TABLET SECTION 4 -------------- */
+
+.fourth-section-item {
+width: calc((100% - 48px) / 2);
+}
+
+.portfolio {
+    gap: 72px 24px;
+}
+
 /* -------------- TABLET FOOTER -------------- */
 
 
@@ -728,7 +896,48 @@ padding: 24px 0;
 }
 
 /* -------------- DESKTOP SECTION 3 -------------- */
+/* none */
 /* -------------- DESKTOP SECTION 4 -------------- */
+
+.portfolio {
+    gap: 48px 24px;
+}
+
+.fourth-section-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.fourth-section-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.our-portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-portfolio-top {
+    display: flex;
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fourth-section-item:hover .our-portfolio-top,
+.fourth-section-item:focus .our-portfolio-top {
+    transform: translateY(0%);
+}
+
+
 /* -------------- DESKTOP FOOTER -------------- */
 
 
