@@ -169,7 +169,7 @@ body {
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    max-width: 318px;
+    max-width: 320px;
     padding-top: 77px;
     padding-bottom: 72px;
 }
@@ -898,6 +898,11 @@ display: none;
     display: none;
 }
 
+.top-header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -933,8 +938,8 @@ display: none;
 
 .current::after {
     display: block;
+    position: absolute;
     content: "";
-    position: relative;
     width: 48px;
     height: 4px;
     left: 0;
@@ -942,9 +947,7 @@ display: none;
     margin-top: 20px;
     border-radius: 2px;
     background: var(--OCEAN, #404BBF);
-    position: absolute;
 }
-
 
 .contacts {
     display: block;
@@ -1006,15 +1009,15 @@ display: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    column-gap: 24px;
 }
 
 .second-section-item {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
 }
 
 .section-text {
-    text-align: start;
+    text-align: left;
 }
 
 /* -------------- TABLET SECTION 3 -------------- */
@@ -1111,7 +1114,7 @@ padding: 24px 0;
 /* -------------- DESKTOP SECTION 1 -------------- */
 
 .first-section {
-    background: var(--NAVY-BLUE, #2E2F42);
+    background-color: var(--NAVY-BLUE, #2E2F42);
     padding: 188px 0;
     max-width: 1440px;
         background-image: linear-gradient(to bottom,
