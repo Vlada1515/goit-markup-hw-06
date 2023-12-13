@@ -886,7 +886,7 @@ display: none;
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 736px;
+        max-width: 768px;
     }
 
 
